@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | The Best Heating, Air Conditioning & More</title>
+<meta name="description" content="Learn about The Best Heating, Air Conditioning & More in Whitehorse, Yukon. Discover our experience and commitment to plumbing, heating and air conditioning services.">
+<link rel="canonical" href="https://YOURDOMAIN.com/about/">
+<meta property="og:title" content="About Us | The Best Heating, Air Conditioning & More">
+<meta property="og:description" content="15 years of industry experience serving residential and commercial customers in Whitehorse, Yukon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HVACBusiness","name":"The Best Heating, Air Conditioning & More","telephone":"+1-867-323-2378","areaServed":"Whitehorse, Yukon","address":{"@type":"PostalAddress","addressLocality":"Whitehorse","addressRegion":"YT","addressCountry":"CA"}}
+</script>
+<style>
+/* ===== Shared with homepage & services ===== */
+:root{--navy:#101D32;--navy-2:#18294a;--orange:#F28C38;--orange-d:#d9761f;--grey:#F4F6F8;--white:#fff;--text:#2b3647;--muted:#5d6b80;--line:#dfe4ea;--r:6px;--max:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Manrope,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);line-height:1.65;background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:100%;width:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--navy)}
+h2{font-size:clamp(2rem,4vw,3.1rem)}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;font:700 .85rem/1 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;border:2px solid transparent;border-radius:var(--r);cursor:pointer;transition:transform .25s,background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn-primary{background:var(--orange);color:var(--navy)}
+.btn-primary:hover{background:var(--orange-d);transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,140,56,.35)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy);transform:translateY(-2px)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:8px}
+header{position:fixed;inset:0 0 auto;z-index:100;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+header.scrolled{background:rgba(16,29,50,.96);backdrop-filter:blur(10px);box-shadow:0 2px 24px rgba(0,0,0,.2);padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{width:46px;height:46px;border-radius:50%;border:2px solid var(--orange)}
+.brand span{display:flex;flex-direction:column;font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;line-height:1.3;color:rgba(255,255,255,.75)}
+.brand b{font-size:1.15rem;letter-spacing:.06em;color:#fff;font-weight:800}
+nav ul{display:flex;gap:30px;list-style:none}
+nav a{color:#fff;font-weight:600;font-size:.92rem;position:relative;padding:6px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--orange);transition:width .3s}
+nav a:hover::after,nav a[aria-current=page]::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:20px}
+.phone{color:#fff;font-weight:800;font-size:1.05rem;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.phone svg{color:var(--orange)}
+.nav-cta .btn{min-height:44px;padding:0 20px;font-size:.75rem}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger i,.burger i::before,.burger i::after{position:absolute;left:10px;width:24px;height:2px;background:#fff;transition:.3s;content:""}
+.burger i{top:21px}.burger i::before{top:-7px;left:0}.burger i::after{top:7px;left:0}
+.burger[aria-expanded=true] i{background:transparent}
+.burger[aria-expanded=true] i::before{transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] i::after{transform:translateY(-7px) rotate(-45deg)}
+section{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:56px;flex-wrap:wrap}
+.sec-head p{max-width:420px;color:var(--muted)}
+.cta{position:relative;background:var(--navy);color:#fff;text-align:center;padding:120px 0;overflow:hidden}
+.cta>img{position:absolute;inset:0;opacity:.22}
+.cta .wrap{position:relative}
+.cta h2{color:#fff;max-width:760px;margin:0 auto 20px}
+.cta p{max-width:560px;margin:0 auto 36px;color:rgba(255,255,255,.8)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.cta .cta-row{justify-content:center;margin:0}
+.cta::before{content:"";position:absolute;z-index:1;left:50%;top:0;width:80px;height:4px;margin-left:-40px;background:var(--orange)}
+footer{background:#0a1424;color:rgba(255,255,255,.7);padding:80px 0 0}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:56px}
+footer h4{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:.92rem}
+footer a:hover{color:var(--orange)}
+footer p{font-size:.92rem;margin-top:16px;max-width:320px}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding:24px 0;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.steps::before{content:"";position:absolute;top:27px;left:27px;right:27px;height:2px;background:var(--line)}
+.step{position:relative}
+.step i{position:relative;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--orange);font:800 1.05rem Manrope,sans-serif;font-style:normal;margin-bottom:22px;box-shadow:0 0 0 8px #fff}
+.step h3{font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:8px}
+.step p{font-size:.93rem;color:var(--muted)}
+
+/* ===== About page ===== */
+.ahero{position:relative;background:var(--navy);color:#fff;min-height:92svh;display:flex;align-items:center;padding:140px 0 110px;overflow:hidden;isolation:isolate}
+.ahero>img{position:absolute;inset:0;z-index:-2;transform:scale(1.1);will-change:transform}
+.ahero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,var(--navy) 15%,rgba(16,29,50,.8) 55%,rgba(16,29,50,.4))}
+.ahero h1{color:#fff;font-size:clamp(2.6rem,6vw,5rem);max-width:840px;margin-bottom:24px}
+.ahero h1 em{font-style:normal;color:var(--orange)}
+.ahero .lead{font-size:1.15rem;color:rgba(255,255,255,.82);max-width:620px}
+.xp{position:absolute;right:max(24px,calc((100vw - var(--max))/2 + 24px));bottom:56px;display:flex;align-items:center;gap:18px;padding:20px 26px;background:var(--orange);color:var(--navy);border-radius:var(--r);box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.xp b{font-size:3rem;line-height:1;font-weight:800}
+.xp span{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;line-height:1.3}
+.crumb{position:absolute;left:0;right:0;bottom:28px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.crumb a:hover{color:var(--orange)}
+
+.story-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
+.story-imgs{grid-column:1/7;position:relative;height:640px}
+.story-imgs .a{position:absolute;inset:0 90px 120px 0;border-radius:var(--r);overflow:hidden}
+.story-imgs .b{position:absolute;right:0;bottom:0;width:58%;height:46%;border-radius:var(--r);overflow:hidden;border:8px solid #fff;box-shadow:0 24px 50px rgba(16,29,50,.2)}
+.story-imgs .tag{position:absolute;left:24px;bottom:150px;background:var(--navy);color:#fff;padding:14px 20px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
+.story-imgs .tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.story-text{grid-column:8/13}
+.story-text h2{font-size:clamp(1.8rem,3.2vw,2.7rem);margin-bottom:26px}
+.story-text p{color:var(--muted);margin-bottom:18px;max-width:520px}
+.story-text p:first-of-type::first-line{font-weight:700;color:var(--navy)}
+.rule{width:64px;height:4px;background:var(--orange);margin:30px 0 0;border-radius:2px}
+
+.exp{position:relative;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
+.exp>img{position:absolute;inset:0;z-index:-1;opacity:.14}
+.exp h2{color:#fff;max-width:640px;margin-bottom:64px}
+.exp-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;border-top:1px solid rgba(255,255,255,.2)}
+.exp-item{padding:44px 36px 12px 0}
+.exp-item+.exp-item{padding-left:36px;border-left:1px solid rgba(255,255,255,.2)}
+.exp-item b{display:block;font-size:clamp(2.4rem,5vw,4.6rem);line-height:1;font-weight:800;color:#fff;letter-spacing:-.03em;margin-bottom:14px}
+.exp-item:first-child b{color:var(--orange)}
+.exp-item span{color:rgba(255,255,255,.72);font-size:.98rem;display:block;max-width:260px}
+
+.mv{display:grid;grid-template-columns:1fr 1fr;padding:0}
+.mv>div{padding:100px 64px;position:relative;overflow:hidden}
+.mission{background:var(--grey)}
+.vision{background:var(--orange);color:var(--navy)}
+.mv .q{position:absolute;right:36px;top:10px;font-size:11rem;line-height:1;font-weight:800;opacity:.09;color:var(--navy);pointer-events:none}
+.mv h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:22px}
+.mv p{font-size:1.2rem;font-weight:500;max-width:480px;line-height:1.6}
+.mission p{color:var(--text)}
+.vision .eyebrow{color:var(--navy)}
+.mission .eyebrow{color:var(--orange-d)}
+
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+.val{padding:44px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .3s,color .3s}
+.val:nth-child(3n){border-right:0}
+.val:nth-child(n+4){border-bottom:0}
+.val:hover{background:var(--navy)}
+.val small{position:absolute;top:30px;right:32px;font-weight:800;font-size:.82rem;letter-spacing:.12em;color:var(--line);transition:color .3s}
+.val:hover small{color:var(--orange)}
+.val svg{color:var(--orange);margin-bottom:22px}
+.val h3{font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;transition:color .3s}
+.val p{font-size:.94rem;color:var(--muted);transition:color .3s}
+.val:hover h3{color:#fff}.val:hover p{color:rgba(255,255,255,.75)}
+
+.why{background:var(--grey)}
+.why-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:stretch}
+.why-img{grid-column:1/6;position:relative;min-height:600px;border-radius:var(--r);overflow:hidden}
+.why-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,29,50,.9),rgba(16,29,50,0) 55%)}
+.why-img div{position:absolute;left:32px;right:32px;bottom:30px;z-index:2;color:#fff}
+.why-img b{display:block;font-size:4rem;line-height:1;color:var(--orange);font-weight:800}
+.why-img span{font-size:.85rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.why-list{grid-column:6/13;padding-left:32px}
+.why-list h2{font-size:clamp(1.8rem,3.2vw,2.7rem);margin-bottom:34px}
+.why-list ul{list-style:none}
+.why-list li{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line);align-items:center;font-weight:700;color:var(--navy);transition:padding-left .3s}
+.why-list li:last-child{border-bottom:1px solid var(--line)}
+.why-list li:hover{padding-left:10px}
+.why-list li i{width:40px;height:40px;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:var(--orange)}
+
+.area{position:relative;color:#fff;min-height:520px;display:flex;align-items:center;overflow:hidden;isolation:isolate;padding:100px 0}
+.area>img{position:absolute;inset:0;z-index:-2}
+.area::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(16,29,50,.94) 25%,rgba(16,29,50,.45))}
+.area h2{color:#fff;max-width:620px;margin-bottom:20px}
+.area p{max-width:520px;color:rgba(255,255,255,.84);margin-bottom:28px}
+.loc{display:inline-flex;align-items:center;gap:12px;font-weight:800;margin-bottom:30px;padding:12px 20px;border:1.5px solid rgba(255,255,255,.3);border-radius:50px}
+.loc svg{color:var(--orange)}
+.area .note{position:absolute;right:24px;bottom:14px;font-size:.7rem;color:rgba(255,255,255,.5)}
+
+@media(max-width:1060px){
+ .burger{display:block;z-index:2}
+ .nav-cta .btn,.nav-cta .phone span{display:none}
+ nav{position:fixed;inset:0 0 0 auto;width:min(340px,86vw);background:var(--navy);padding:100px 32px 32px;transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.7,.2,1);box-shadow:-20px 0 50px rgba(0,0,0,.3)}
+ nav.open{transform:none}
+ nav ul{flex-direction:column;gap:6px}
+ nav a{display:block;font-size:1.3rem;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+ .ahero::before{background:linear-gradient(to top,var(--navy) 22%,rgba(16,29,50,.7))}
+ .xp{position:static;margin-top:40px;display:inline-flex}
+ .ahero{align-items:flex-end}
+ .story-imgs,.story-text{grid-column:1/-1}
+ .story-imgs{height:520px}
+ .exp-grid{grid-template-columns:1fr}
+ .exp-item,.exp-item+.exp-item{padding:32px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.2)}
+ .mv{grid-template-columns:1fr}
+ .mv>div{padding:72px 32px}
+ .val-grid{grid-template-columns:1fr 1fr}
+ .val:nth-child(3n){border-right:1px solid var(--line)}
+ .val:nth-child(2n){border-right:0}
+ .val:nth-child(n+4){border-bottom:1px solid var(--line)}
+ .val:nth-child(n+5){border-bottom:0}
+ .why-img,.why-list{grid-column:1/-1}
+ .why-img{min-height:420px}
+ .why-list{padding:20px 0 0}
+ .foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+ .steps{grid-template-columns:1fr;gap:0}
+ .steps::before{top:28px;bottom:28px;left:27px;right:auto;width:2px;height:auto}
+ .step{padding:0 0 34px 80px}
+ .step i{position:absolute;left:0;top:0;margin:0}
+}
+@media(max-width:640px){
+ section{padding:72px 0}
+ .wrap{padding:0 20px}
+ .brand span{display:none}
+ .ahero{padding:110px 0 90px;min-height:auto}
+ .cta-row .btn{width:100%}
+ .story-imgs{height:420px}
+ .story-imgs .a{inset:0 50px 100px 0}
+ .story-imgs .tag{bottom:120px;left:12px}
+ .val-grid,.foot{grid-template-columns:1fr}
+ .val,.val:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}
+ .val:last-child{border-bottom:0}
+ .mv .q{font-size:7rem}
+ .mv p{font-size:1.05rem}
+ .area{min-height:auto}
+ .area::before{background:rgba(16,29,50,.82)}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER (same as other pages; About is active) -->
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="../index.html" aria-label="The Best Heating, Air Conditioning & More – home">
+   <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-63e0cfa4-f0a5-410f-8a77-8b45ebc14d89/uploaded-1791394879308976304.jpg" alt="" width="46" height="46">
+   <span><b>THE BEST</b>Heating, Air Conditioning &amp; More</span>
+  </a>
+  <nav id="menu" aria-label="Primary">
+  <div class="nav-cta">
+   <a class="phone" href="tel:+18673232378" aria-label="Call 867-323-2378">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    <span>867-323-2378</span>
+   </a>
+   <a class="btn btn-primary" href="../contact/index.html">Request a Free Estimate</a>
+   <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><i></i></button>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="ahero">
+ <img data-parallax src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-155436d3-6db9-4c67-97d6-6600c7515ad0/uploaded-1791394870334113175.jpg" alt="Wall-mounted boiler with neatly arranged copper piping installed by The Best in Whitehorse" fetchpriority="high">
+ <div class="wrap reveal">
+  <span class="eyebrow">About Our Company</span>
+  <h1>Built on Experience. Driven by <em>Comfort.</em></h1>
+  <p class="lead">Providing plumbing, heating, and air conditioning solutions with a commitment to dependable service, professional workmanship, and customer satisfaction.</p>
+  <div class="xp"><b>15</b><span>Years of Industry<br>Experience</span></div>
+ </div>
+ <div class="crumb"><div class="wrap"><a href="../index.html">Home</a> &nbsp;/&nbsp; About</div></div>
+</section>
+
+<!-- STORY -->
+<section>
+ <div class="wrap story-grid">
+  <div class="story-imgs reveal">
+   <div class="a"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-9c0e8a9c-df49-481b-b3d1-7b9f1a4003ee/uploaded-1791395039941140824.jpg" alt="Technician inspecting heating pipework" loading="lazy"></div>
+   <div class="b"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-dcfdd2b1-a6ff-4a5b-b18f-dbc991ebceb1/uploaded-1791395038468432364.jpg" alt="Furnace opened for service" loading="lazy"></div>
+   <div class="tag">Whitehorse, Yukon</div>
+  </div>
+  <div class="story-text reveal">
+   <span class="eyebrow">Our Story</span>
+   <h2>More Than Just Plumbing &amp; Heating. We're Here for Your Comfort.</h2>
+   <p>At The Best Heating, Air Conditioning &amp; More, we understand how important reliable plumbing, heating, and cooling systems are to everyday life. With 15 years of industry experience, our focus is on helping residential and commercial customers maintain comfortable and functional spaces.</p>
+   <p>Based in Whitehorse, Yukon, we recognize the importance of dependable heating and property services in a region where comfort matters throughout the seasons.</p>
+   <p>Our approach is built around experience, professionalism, and understanding the needs of every customer.</p>
+   <div class="rule"></div>
+  </div>
+ </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp">
+ <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-37b16cb6-56c1-4c00-932c-de36fc079cf4/uploaded-1791395040414792272.jpg" alt="" loading="lazy">
+ <div class="wrap">
+  <span class="eyebrow">Our Experience</span>
+  <h2 class="reveal">Experience That Makes a Difference.</h2>
+  <div class="exp-grid">
+   <div class="exp-item reveal"><b>15+</b><span>Years of industry experience.</span></div>
+   <div class="exp-item reveal"><b>Residential &amp; Commercial</b><span>Serving different property requirements.</span></div>
+   <div class="exp-item reveal"><b>Whitehorse, Yukon</b><span>Locally based business.</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- MISSION & VISION -->
+<div class="mv">
+ <div class="mission reveal">
+  <span class="q" aria-hidden="true">“</span>
+  <span class="eyebrow">Our Mission</span>
+  <h2>What drives us.</h2>
+  <p>To provide dependable plumbing, heating, and air conditioning services while maintaining a strong focus on professional workmanship, customer needs, and reliable solutions.</p>
+ </div>
+ <div class="vision reveal">
+  <span class="q" aria-hidden="true">“</span>
+  <span class="eyebrow">Our Vision</span>
+  <h2>Where we're headed.</h2>
+  <p>To be a trusted name for plumbing and HVAC services, recognized for professionalism, reliability, and a commitment to customer comfort.</p>
+ </div>
+</div>
+
+<!-- VALUES -->
+<section>
+ <div class="wrap">
+  <div class="sec-head reveal"><div><span class="eyebrow">Our Core Values</span><h2>What we stand for.</h2></div><p>The principles behind every call, repair and installation.</p></div>
+  <div class="val-grid">
+   <div class="val reveal"><small>01</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg><h3>Reliability</h3><p>We believe customers should be able to depend on the service they receive.</p></div>
+   <div class="val reveal"><small>02</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg><h3>Quality</h3><p>We value professional workmanship and attention to detail.</p></div>
+   <div class="val reveal"><small>03</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a8 8 0 0 1-11.5 7.2L3 21l1.8-6.5A8 8 0 1 1 21 12z"/></svg><h3>Customer Focus</h3><p>We aim to understand each customer's requirements and provide appropriate solutions.</p></div>
+   <div class="val reveal"><small>04</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></svg><h3>Professionalism</h3><p>We believe in clear communication and a professional approach to every interaction.</p></div>
+   <div class="val reveal"><small>05</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><h3>Experience</h3><p>Our 15 years of industry experience contribute to our understanding of plumbing and HVAC requirements.</p></div>
+   <div class="val reveal"><small>06</small><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg><h3>Commitment</h3><p>We are committed to helping customers maintain comfortable and functional properties.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+ <div class="wrap why-grid">
+  <div class="why-img reveal">
+   <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-e965f4cf-17bf-41de-93db-48d24cf01a16/uploaded-1791395039463229910.jpg" alt="Heating component repair by The Best" loading="lazy">
+   <div><b>24/7</b><span>Service availability</span></div>
+  </div>
+  <div class="why-list reveal">
+   <span class="eyebrow">Why Customers Choose Us</span>
+   <h2>Why Choose The Best Heating, Air Conditioning &amp; More?</h2>
+   <ul>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>15 Years of Industry Experience</li>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Plumbing, Heating &amp; Air Conditioning Services</li>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Residential &amp; Commercial Solutions</li>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>24/7 Service Availability</li>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Customer-Focused Approach</li>
+    <li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Dependable Service</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- APPROACH -->
+<section>
+ <div class="wrap">
+  <div class="sec-head reveal"><div><span class="eyebrow">Our Approach</span><h2>Every Property Is Different.<br>So Is Every Solution.</h2></div><p>A customer-focused process that starts with listening.</p></div>
+  <ol class="steps">
+   <li class="step reveal"><i>01</i><h3>Listen</h3><p>Understand the customer's requirements.</p></li>
+   <li class="step reveal"><i>02</i><h3>Understand</h3><p>Discuss the property and service requirements.</p></li>
+   <li class="step reveal"><i>03</i><h3>Provide Solutions</h3><p>Discuss appropriate service options and next steps.</p></li>
+   <li class="step reveal"><i>04</i><h3>Support</h3><p>Provide professional service and assistance.</p></li>
+  </ol>
+ </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area">
+ <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-155436d3-6db9-4c67-97d6-6600c7515ad0/uploaded-1791394870334113175.jpg" alt="Heating installation for a Whitehorse property (placeholder – replace with local Whitehorse photography)" loading="lazy">
+ <div class="wrap reveal">
+  <span class="eyebrow">Our Service Area</span>
+  <h2>Proudly Based in Whitehorse, Yukon.</h2>
+  <p>Providing plumbing, heating, and air conditioning services for residential and commercial customers in Whitehorse, Yukon.</p>
+  <div class="loc"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Whitehorse, Yukon, Canada</div><br>
+  <a class="btn btn-primary" href="tel:+18673232378">Call 867-323-2378</a>
+ </div>
+ <span class="note">Placeholder photo – replace with a Whitehorse landscape or local image.</span>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta">
+ <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-37b16cb6-56c1-4c00-932c-de36fc079cf4/uploaded-1791395040414792272.jpg" alt="" loading="lazy">
+ <div class="wrap reveal">
+  <h2>Let's Make Your Property More Comfortable.</h2>
+  <p>Looking for dependable plumbing, heating, or air conditioning assistance? Get in touch with our team and let's discuss your requirements.</p>
+  <div class="cta-row"><a class="btn btn-primary" href="../services/index.html">Explore Our Services</a><a class="btn btn-ghost" href="tel:+18673232378">Call 867-323-2378</a></div>
+ </div>
+</section>
+</main>
+
+<!-- FOOTER (same as other pages) -->
+<footer>
+ <div class="wrap">
+  <div class="foot">
+   <div><a class="brand" href="../index.html"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-63e0cfa4-f0a5-410f-8a77-8b45ebc14d89/uploaded-1791394879308976304.jpg" alt="" width="46" height="46" loading="lazy"><span><b>THE BEST</b>Heating, Air Conditioning &amp; More</span></a>
+    <p>Residential and commercial heating, cooling and plumbing service in Whitehorse, Yukon. 15 years of experience, available 24/7.</p></div>
+   <div><h4>Navigate</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../services/index.html">Services</a></li><li><a href="index.html">About</a></li><li><a href="../projects/index.html">Projects</a></li><li><a href="../contact/index.html">Contact</a></li></ul></div>
+   <div><h4>Services</h4><ul><li><a href="../services/index.html#plumbing">Plumbing</a></li><li><a href="../services/index.html#heating">Heating Repair &amp; Installation</a></li><li><a href="../services/index.html#air-conditioning">Air Conditioning</a></li><li><a href="../services/index.html#hvac-maintenance">HVAC Maintenance</a></li><li><a href="../services/index.html#residential">Residential &amp; Commercial</a></li></ul></div>
+   <div><h4>Contact</h4><ul><li><a href="tel:+18673232378">867-323-2378</a></li><li>Whitehorse, Yukon, Canada</li><li><a href="https://www.facebook.com/people/The-Best-Heating-Air-Conditioning-and-More/61587707032933/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© <span id="yr">2026</span> The Best Heating, Air Conditioning &amp; More. All rights reserved.</span><span>Whitehorse, Yukon</span></div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ const $=s=>document.querySelector(s), reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ $('#yr').textContent=new Date().getFullYear();
+ const hd=$('header'), onScroll=()=>hd.classList.toggle('scrolled',scrollY>40);
+ addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+ const burger=$('#burger'), menu=$('#menu');
+ const setMenu=o=>{menu.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+ burger.onclick=()=>setMenu(!menu.classList.contains('open'));
+ menu.querySelectorAll('a').forEach(a=>a.onclick=()=>setMenu(false));
+ addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+ const items=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window && !reduce){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+  items.forEach(el=>io.observe(el));
+ } else items.forEach(el=>el.classList.add('in'));
+
+ const px=$('[data-parallax]');
+ if(px && !reduce){let t=false;addEventListener('scroll',()=>{if(t)return;t=true;requestAnimationFrame(()=>{if(scrollY<900)px.style.transform=`scale(1.1) translateY(${scrollY*.06}px)`;t=false})},{passive:true})}
+})();
+</script>
+</body>
+</html>
