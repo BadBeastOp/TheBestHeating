@@ -175,6 +175,69 @@ form .btn{width:100%}
 .status.warn{background:#fff4e5;color:#8a4b08}
 .status a{text-decoration:underline}
 
+/* ===== Testimonials & Google Reviews ===== */
+.stars{--p:100%;display:inline-block;font-size:1.15rem;letter-spacing:3px;line-height:1;background:linear-gradient(90deg,var(--orange) var(--p),#d3d9e0 var(--p));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.avatar{flex:none;width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--orange);display:grid;place-items:center;font-weight:800;font-size:.95rem;letter-spacing:.04em}
+.tm{background:var(--grey)}
+.tm-banner{display:flex;gap:12px;align-items:flex-start;background:#fff4e5;color:#8a4b08;border-left:4px solid var(--orange);padding:14px 18px;border-radius:var(--r);font-size:.88rem;font-weight:600;margin-bottom:32px}
+.tm-banner[hidden]{display:none}
+.tm-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:10px 2px 30px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tm-track::-webkit-scrollbar{display:none}
+.tm-track:focus-visible{outline-offset:-3px}
+.tm-card{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start;position:relative;background:#fff;border-radius:var(--r);border-top:4px solid var(--orange);padding:40px 32px 32px;display:flex;flex-direction:column;gap:18px;box-shadow:0 14px 40px rgba(16,29,50,.08);transition:transform .35s,box-shadow .35s}
+.tm-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(16,29,50,.14)}
+.tm-card::before{content:"\201C";position:absolute;right:26px;top:6px;font-size:6rem;line-height:1;font-weight:800;color:var(--grey)}
+.tm-card blockquote{position:relative;color:var(--text);font-size:1.02rem;line-height:1.7;flex:1}
+.tm-who{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.tm-who b{display:block;color:var(--navy);line-height:1.3}
+.tm-who small{color:var(--muted);font-size:.82rem}
+.tm-badge{position:absolute;top:14px;left:20px;background:var(--navy);color:#fff;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:3px}
+.tm-bar{display:flex;align-items:center;gap:20px}
+.tm-btns{display:flex;gap:10px}
+.tm-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--navy);font-size:1.4rem;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.tm-btn:hover{background:var(--orange);border-color:var(--orange);transform:translateY(-2px)}
+.tm-pos{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.08em}
+.tm-empty{padding:40px;text-align:center;color:var(--muted);background:#fff;border-radius:var(--r);width:100%}
+
+.gr{background:var(--white)}
+.gr-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:stretch}
+.gr-panel{background:var(--navy);color:#fff;border-radius:var(--r);padding:48px 40px;display:flex;flex-direction:column;gap:14px}
+.gword{font-weight:800;font-size:1.5rem;letter-spacing:-.02em;line-height:1}
+.gr-label{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.gr-score{font-size:clamp(3.4rem,7vw,5rem);font-weight:800;line-height:1;letter-spacing:-.03em}
+.gr-score small{font-size:1.2rem;color:rgba(255,255,255,.6);font-weight:600;letter-spacing:0}
+.gr-count{color:rgba(255,255,255,.8);font-size:.95rem}
+.gr-state{color:rgba(255,255,255,.8);font-size:.95rem;line-height:1.6}
+.gr-actions{display:grid;gap:12px;margin-top:auto;padding-top:22px}
+.gr-actions .btn{width:100%}
+.btn[aria-disabled=true]{opacity:.45;cursor:not-allowed;pointer-events:none}
+.gr-hint{font-size:.76rem;color:rgba(255,255,255,.55)}
+.gr-reviews{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-content:start}
+.gr-card{background:var(--grey);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:14px;transition:transform .3s,box-shadow .3s}
+.gr-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,29,50,.1)}
+.gr-card:nth-child(5){grid-column:1/-1}
+.gr-head{display:flex;align-items:center;gap:12px}
+.gr-head b{display:block;color:var(--navy);line-height:1.25}
+.gr-head small{color:var(--muted);font-size:.78rem}
+.gr-card p{font-size:.93rem;color:var(--text);display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.gr-credit{grid-column:1/-1;font-size:.78rem;color:var(--muted)}
+.gr-credit a{text-decoration:underline}
+.gr-notice{grid-column:1/-1;background:var(--grey);border:1.5px dashed var(--line);border-radius:var(--r);padding:36px;color:var(--muted);font-size:.95rem}
+.gr-notice b{color:var(--navy);display:block;margin-bottom:6px;font-size:1.05rem}
+.skel{background:linear-gradient(90deg,var(--grey) 25%,#e9edf1 50%,var(--grey) 75%);background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:var(--r);min-height:170px}
+@keyframes sk{to{background-position:-200% 0}}
+@media(max-width:1060px){
+ .tm-card{flex-basis:calc((100% - 24px)/2)}
+ .gr-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ .tm-card{flex-basis:100%;padding:38px 24px 26px}
+ .gr-reviews{grid-template-columns:1fr}
+ .gr-card:nth-child(5){grid-column:auto}
+ .gr-panel{padding:36px 24px}
+ .tm-btn{width:48px;height:48px}
+}
+
 /* Footer */
 footer{background:#0a1424;color:rgba(255,255,255,.7);padding:80px 0 0}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:56px}
@@ -398,6 +461,50 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
  </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="tm" id="testimonials" aria-labelledby="tm-title">
+ <div class="wrap">
+  <div class="sec-head reveal">
+   <div><span class="eyebrow">Customer Experiences</span><h2 id="tm-title">What Our Customers<br>Say About Us</h2></div>
+   <p>We believe that dependable service and quality workmanship make a difference. Discover what our customers have to say about their experiences.</p>
+  </div>
+  <div class="tm-banner" id="tm-banner" role="note" hidden><span aria-hidden="true">⚠</span><span>Demonstration content: the testimonials below are samples, not real customer reviews. Replace them with genuine, permitted customer feedback before launch.</span></div>
+  <div class="reveal" role="region" aria-roledescription="carousel" aria-label="Customer testimonials">
+   <div class="tm-track" id="tm-track" tabindex="0"></div>
+   <div class="tm-bar">
+    <div class="tm-btns">
+     <button class="tm-btn" id="tm-prev" type="button" aria-label="Previous testimonial">‹</button>
+     <button class="tm-btn" id="tm-next" type="button" aria-label="Next testimonial">›</button>
+    </div>
+    <span class="tm-pos" id="tm-pos" aria-live="polite"></span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section class="gr" id="google-reviews" aria-labelledby="gr-title">
+ <div class="wrap">
+  <div class="sec-head reveal">
+   <div><span class="eyebrow">Google Customer Reviews</span><h2 id="gr-title">Trusted by Customers.<br>Backed by Experience.</h2></div>
+   <p>See what customers have shared about their experiences with our business.</p>
+  </div>
+  <div class="gr-grid reveal">
+   <div class="gr-panel">
+    <span class="gword" aria-label="Google"><i style="font-style:normal;color:#4285F4">G</i><i style="font-style:normal;color:#EA4335">o</i><i style="font-style:normal;color:#FBBC05">o</i><i style="font-style:normal;color:#4285F4">g</i><i style="font-style:normal;color:#34A853">l</i><i style="font-style:normal;color:#EA4335">e</i></span>
+    <span class="gr-label">Google Reviews</span>
+    <div id="gr-summary"></div>
+    <div class="gr-actions">
+     <a class="btn btn-primary" id="gr-read" href="#" aria-disabled="true">Read All Google Reviews</a>
+     <a class="btn btn-ghost" id="gr-write" href="#" aria-disabled="true">Write a Google Review</a>
+     <span class="gr-hint" id="gr-hint"></span>
+    </div>
+   </div>
+   <div class="gr-reviews" id="gr-reviews" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
 <!-- CTA -->
 <section class="cta">
  <img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-37b16cb6-56c1-4c00-932c-de36fc079cf4/uploaded-1791395040414792272.jpg" alt="" loading="lazy">
@@ -522,5 +629,32 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
  });
 })();
 </script>
+// Environment variables (set in your host's dashboard, never in code):
+//   GOOGLE_PLACES_API_KEY  – restricted to the Places API (New)
+//   GOOGLE_PLACE_ID        – the verified Place ID
+exports.handler = async () => {
+  try {
+    const r = await fetch(`https://places.googleapis.com/v1/places/${process.env.GOOGLE_PLACE_ID}`, {
+      headers: {
+        'X-Goog-Api-Key': process.env.GOOGLE_PLACES_API_KEY,
+        'X-Goog-FieldMask': 'displayName,rating,userRatingCount,googleMapsUri,reviews'
+      }
+    });
+    if (!r.ok) throw new Error('Places API ' + r.status);
+    const d = await r.json();
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=3600' },
+      body: JSON.stringify({
+        rating: d.rating,
+        userRatingCount: d.userRatingCount,
+        googleMapsUri: d.googleMapsUri,
+        reviews: d.reviews || []
+      })
+    };
+  } catch (e) {
+    return { statusCode: 502, body: JSON.stringify({ error: 'unavailable' }) };
+  }
+};
 </body>
 </html>
