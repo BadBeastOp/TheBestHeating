@@ -493,14 +493,37 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
    <div class="gr-panel">
     <span class="gword" aria-label="Google"><i style="font-style:normal;color:#4285F4">G</i><i style="font-style:normal;color:#EA4335">o</i><i style="font-style:normal;color:#FBBC05">o</i><i style="font-style:normal;color:#4285F4">g</i><i style="font-style:normal;color:#34A853">l</i><i style="font-style:normal;color:#EA4335">e</i></span>
     <span class="gr-label">Google Reviews</span>
-    <div id="gr-summary"></div>
+    <div class="gr-state">
+  Explore genuine customer ratings and reviews
+  on our Google Business Profile.
+</div>
     <div class="gr-actions">
-     <a class="btn btn-primary" id="gr-read" href="#" aria-disabled="true">Read All Google Reviews</a>
-     <a class="btn btn-ghost" id="gr-write" href="#" aria-disabled="true">Write a Google Review</a>
+     <a
+  class="btn btn-primary"
+  id="gr-read"
+  href="PASTE_GOOGLE_MAPS_LINK_HERE"
+  target="_blank"
+  rel="noopener noreferrer">
+  Read All Google Reviews
+</a>
+     <a
+  class="btn btn-ghost"
+  id="gr-write"
+  href="PASTE_GOOGLE_REVIEW_LINK_HERE"
+  target="_blank"
+  rel="noopener noreferrer">
+  Write a Google Review
+</a>
      <span class="gr-hint" id="gr-hint"></span>
     </div>
    </div>
-   <div class="gr-reviews" id="gr-reviews" aria-live="polite"></div>
+   <div class="gr-reviews" id="gr-reviews">
+  <div class="gr-notice">
+    <b>Real Customer Feedback</b>
+    Read genuine customer reviews and ratings
+    directly on our Google Business Profile.
+  </div>
+</div>
   </div>
  </div>
 </section>
@@ -629,32 +652,5 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
  });
 })();
 </script>
-// Environment variables (set in your host's dashboard, never in code):
-//   GOOGLE_PLACES_API_KEY  – restricted to the Places API (New)
-//   GOOGLE_PLACE_ID        – the verified Place ID
-exports.handler = async () => {
-  try {
-    const r = await fetch(`https://places.googleapis.com/v1/places/${process.env.GOOGLE_PLACE_ID}`, {
-      headers: {
-        'X-Goog-Api-Key': process.env.GOOGLE_PLACES_API_KEY,
-        'X-Goog-FieldMask': 'displayName,rating,userRatingCount,googleMapsUri,reviews'
-      }
-    });
-    if (!r.ok) throw new Error('Places API ' + r.status);
-    const d = await r.json();
-    return {
-      statusCode: 200,
-      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=3600' },
-      body: JSON.stringify({
-        rating: d.rating,
-        userRatingCount: d.userRatingCount,
-        googleMapsUri: d.googleMapsUri,
-        reviews: d.reviews || []
-      })
-    };
-  } catch (e) {
-    return { statusCode: 502, body: JSON.stringify({ error: 'unavailable' }) };
-  }
-};
 </body>
 </html>
