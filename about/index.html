@@ -100,8 +100,21 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
 
 .story-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
 .story-imgs{grid-column:1/7;position:relative;height:640px}
-.story-imgs .a{position:absolute;inset:0 90px 120px 0;border-radius:var(--r);overflow:hidden}
-.story-imgs .b{position:absolute;right:0;bottom:0;width:58%;height:46%;border-radius:var(--r);overflow:hidden;border:8px solid #fff;box-shadow:0 24px 50px rgba(16,29,50,.2)}
+.story-imgs .a {
+    position: absolute;
+    inset: 0 90px 120px 0;
+    border-radius: var(--r);
+    overflow: hidden;
+    background: #F4F6F8;
+}
+
+.story-imgs .a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+}
 .story-imgs .tag{position:absolute;left:24px;bottom:150px;background:var(--navy);color:#fff;padding:14px 20px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
 .story-imgs .tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
 .story-text{grid-column:8/13}
@@ -280,18 +293,79 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
 <!-- STORY -->
 <section>
  <div class="wrap story-grid">
-  <div class="story-imgs reveal">
-   <div class="a"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-9c0e8a9c-df49-481b-b3d1-7b9f1a4003ee/uploaded-1791395039941140824.jpg" alt="Technician inspecting heating pipework" loading="lazy"></div>
-   <div class="b"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-dcfdd2b1-a6ff-4a5b-b18f-dbc991ebceb1/uploaded-1791395038468432364.jpg" alt="Furnace opened for service" loading="lazy"></div>
-   <div class="tag">Whitehorse, Yukon</div>
-  </div>
-  <div class="story-text reveal">
-   <span class="eyebrow">Our Story</span>
-   <h2>More Than Just Plumbing &amp; Heating. We're Here for Your Comfort.</h2>
-   <p>At The Best Heating, Air Conditioning &amp; More, we understand how important reliable plumbing, heating, and cooling systems are to everyday life. With 15 years of industry experience, our focus is on helping residential and commercial customers maintain comfortable and functional spaces.</p>
-   <p>Based in Whitehorse, Yukon, we recognize the importance of dependable heating and property services in a region where comfort matters throughout the seasons.</p>
-   <p>Our approach is built around experience, professionalism, and understanding the needs of every customer.</p>
-   <div class="rule"></div>
+  
+<div class="story-imgs single-story-img reveal">
+ <div class="a">
+  <img
+   src="./jordan.jpeg"
+   alt="Jordan Johanson, owner of The Best Heating, Air Conditioning & More"
+   loading="eager">
+ </div>
+ <div class="tag">Meet the Owner – Jordan Johanson</div>
+</div>
+  
+<div class="story-text reveal">
+ <span class="eyebrow">Our Story</span>
+
+ <h2>Meet Jordan Johanson. The Experience Behind The Best.</h2>
+
+ <p>
+ Born and raised in British Columbia's beautiful Okanagan Valley,
+ Jordan Johanson developed his passion for the heating, ventilation
+ and air conditioning (HVAC) trade at an early age. Growing up, he
+ had the opportunity to learn directly from his father, a seasoned
+ gas fitter and HVAC technician with over 30 years of experience.
+ This hands-on foundation helped shape Jordan's knowledge, work ethic
+ and commitment to quality workmanship.
+ </p>
+
+ <p>
+ After completing his apprenticeship and becoming a journeyman,
+ Jordan moved to Edmonton, Alberta, where he continued developing
+ his technical skills and expanding his industry experience.
+ Throughout his career, he has worked on a wide range of projects,
+ including retrofits, renovations, new construction and high-end
+ custom builds across both residential and commercial applications.
+ </p>
+
+ <p>
+ With years of hands-on experience and a genuine passion for the
+ trades, Jordan established The Best Heating, Air Conditioning
+ and More to help meet the growing demand for dependable heating
+ and cooling services throughout Yukon.
+ </p>
+
+ <p>
+ His goal is simple: to provide reliable service, quality workmanship
+ and practical solutions that customers can count on. Whether it's
+ heating, air conditioning or other HVAC-related needs, Jordan takes
+ pride in helping homeowners and businesses stay comfortable
+ throughout the changing Yukon seasons.
+ </p>
+
+ <p>
+ Outside of work, Jordan enjoys making the most of everything the
+ Yukon has to offer. Hunting, fishing, camping and exploring the
+ outdoors are among his favourite activities. He looks forward to
+ discovering more of the territory, building lasting connections
+ within the community and growing his business in the years ahead.
+ </p>
+
+ <p>
+ At The Best Heating, Air Conditioning and More, we're committed
+ to being there when you need us. Your comfort matters, and we're
+ here to help keep Yukon homes and businesses comfortable,
+ one project at a time.
+ </p>
+
+ <div class="founder-tagline">
+  <h3>Forget About the Rest, Call the Best.</h3>
+  <span>— Jordan Johanson, Owner</span>
+ </div>
+
+ <div class="rule"></div>
+</div>
+
   </div>
  </div>
 </section>
@@ -408,7 +482,11 @@ footer p{font-size:.92rem;margin-top:16px;max-width:320px}
     <p>Residential and commercial heating, cooling and plumbing service in Whitehorse, Yukon. 15 years of experience, available 24/7.</p></div>
    <div><h4>Navigate</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../services/index.html">Services</a></li><li><a href="index.html">About</a></li><li><a href="../projects/index.html">Projects</a></li><li><a href="../contact/index.html">Contact</a></li></ul></div>
    <div><h4>Services</h4><ul><li><a href="../services/index.html#plumbing">Plumbing</a></li><li><a href="../services/index.html#heating">Heating Repair &amp; Installation</a></li><li><a href="../services/index.html#air-conditioning">Air Conditioning</a></li><li><a href="../services/index.html#hvac-maintenance">HVAC Maintenance</a></li><li><a href="../services/index.html#residential">Residential &amp; Commercial</a></li></ul></div>
-   <div><h4>Contact</h4><ul><li><a href="tel:+18673232378">867-323-2378</a></li><li>Whitehorse, Yukon, Canada</li><li><a href="https://www.facebook.com/people/The-Best-Heating-Air-Conditioning-and-More/61587707032933/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+   <div><h4>Contact</h4><ul><li><a href="tel:+18673232378">867-323-2378</a></li>  <li>
+      <a href="mailto:info@thebestheatingacandmore.com">
+        info@thebestheatingacandmore.com
+      </a>
+    </li><li>8 Cookies Road, Macpherson-Grizzly Valley, Yukon, Y1a 6p2</li><li><a href="https://www.facebook.com/people/The-Best-Heating-Air-Conditioning-and-More/61587707032933/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
   </div>
   <div class="copy"><span>© <span id="yr">2026</span> The Best Heating, Air Conditioning &amp; More. All rights reserved.</span><span>Whitehorse, Yukon</span></div>
  </div>
