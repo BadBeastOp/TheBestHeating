@@ -226,7 +226,7 @@ dialog[open]{animation:pop .4s cubic-bezier(.2,.7,.2,1)}
     <li><a href="../about/index.html">About</a></li>
     <li><a href="../services/index.html">Services</a></li>
     <li><a href="index.html" aria-current="page">Projects</a></li>
-    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a href="../contact/index.html">Contact</a></li>
    </ul>
   </nav>
   <div class="nav-cta">
@@ -273,7 +273,7 @@ dialog[open]{animation:pop .4s cubic-bezier(.2,.7,.2,1)}
 <section class="work" id="gallery">
  <div class="wrap">
   <div class="sec-head reveal"><div><span class="eyebrow">Browse by Category</span><h2>Project Gallery</h2></div></div>
-  <div class="demo-note" role="note"><span>⚠</span><span>Demonstration content: project titles, categories and descriptions below are samples, not confirmed completed projects. Replace them with real company projects before launch.</span></div>
+  <!-- <div class="demo-note" role="note"><span>⚠</span><span>Demonstration content: project titles, categories and descriptions below are samples, not confirmed completed projects. Replace them with real company projects before launch.</span></div> -->
   <div class="filters" id="filters" role="group" aria-label="Filter projects by category"></div>
   <p class="count" id="count" aria-live="polite"></p>
   <div class="masonry" id="masonry"></div>
@@ -350,7 +350,7 @@ dialog[open]{animation:pop .4s cubic-bezier(.2,.7,.2,1)}
    <div><a class="brand" href="../index.html"><img src="https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d81a3d6-2728-426a-89f6-6e56c04a71d6/FileID-63e0cfa4-f0a5-410f-8a77-8b45ebc14d89/uploaded-1791394879308976304.jpg" alt="" width="46" height="46" loading="lazy"><span><b>THE BEST</b>Heating, Air Conditioning &amp; More</span></a>
     <p>Residential and commercial heating, cooling and plumbing service in Whitehorse, Yukon. 15 years of experience, available 24/7.</p></div>
    <div><h4>Navigate</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../services/index.html">Services</a></li><li><a href="../about/index.html">About</a></li><li><a href="index.html">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
-   <div><h4>Services</h4><ul><li><a href="../services/index.html#plumbing">Plumbing</a></li><li><a href="../services/index.html#heating">Heating Repair &amp; Installation</a></li><li><a href="../services/index.html#air-conditioning">Air Conditioning</a></li><li><a href="../services/index.html#hvac-maintenance">HVAC Maintenance</a></li><li><a href="../services/index.html#residential">Residential &amp; Commercial</a></li></ul></div>
+   <div><h4>Services</h4><ul><li><a href="../services/index.html#plumbing">Plumbing</a></li><li><a href="../services/index.html#heating">Heating Repair &amp; Installation</a></li><li><a href="../services/index.html#air-conditioning">Heat Pump/Air Conditioning</a></li><li><a href="../services/index.html#hvac-maintenance">HVAC Maintenance</a></li><li><a href="../services/index.html#residential">Residential &amp; Commercial</a></li></ul></div>
    <div><h4>Contact</h4><ul><li><a href="tel:+18673232378">867-323-2378</a></li><li>
       <a href="mailto:info@thebestheatingacandmore.com">
         info@thebestheatingacandmore.com
@@ -376,12 +376,12 @@ const BASE='https://media-api-prod.apigateway.co/files/v3/AG-KDWLCJQF84/Vibe/8d8
 const IMG={
  boiler:{src:BASE+'FileID-155436d3-6db9-4c67-97d6-6600c7515ad0/uploaded-1791394870334113175.jpg',alt:'Wall-mounted boiler with copper piping'},
  furnace:{src:BASE+'FileID-dcfdd2b1-a6ff-4a5b-b18f-dbc991ebceb1/uploaded-1791395038468432364.jpg',alt:'Furnace opened for service'},
- ac:{src:BASE+'FileID-cb43bf4a-b8ef-4858-a1b7-41c9d05b4698/uploaded-1791395038983534426.jpg',alt:'Air conditioning coil and cooling equipment'},
+ ac:{src:BASE+'FileID-cb43bf4a-b8ef-4858-a1b7-41c9d05b4698/uploaded-1791395038983534426.jpg',alt:'Heat Pump/Air Conditioning coil and cooling equipment'},
  maint:{src:BASE+'FileID-37b16cb6-56c1-4c00-932c-de36fc079cf4/uploaded-1791395040414792272.jpg',alt:'Furnace components and wiring during maintenance'},
  pipe:{src:BASE+'FileID-9c0e8a9c-df49-481b-b3d1-7b9f1a4003ee/uploaded-1791395039941140824.jpg',alt:'Heating pipe inspection and repair'},
  part:{src:BASE+'FileID-e965f4cf-17bf-41de-93db-48d24cf01a16/uploaded-1791395039463229910.jpg',alt:'Heating component repair'}
 };
-const CATS={all:'All Projects',plumbing:'Plumbing',heating:'Heating',ac:'Air Conditioning',hvac:'HVAC Maintenance',residential:'Residential',commercial:'Commercial'};
+const CATS={all:'All Projects',plumbing:'Plumbing',heating:'Heating',ac:'Heat Pump/Air Conditioning',hvac:'HVAC Maintenance',residential:'Residential',commercial:'Commercial'};
 const PROJECTS=[
  {id:1,title:'Plumbing System Installation',cats:['plumbing'],ratio:'t',sample:true,desc:'Sample entry for a plumbing system installation project.',images:[IMG.pipe,IMG.part,IMG.boiler]},
  {id:2,title:'Residential Plumbing Work',cats:['plumbing','residential'],ratio:'s',sample:true,desc:'Sample entry for residential plumbing work.',images:[IMG.part,IMG.pipe]},
@@ -389,7 +389,7 @@ const PROJECTS=[
  {id:4,title:'Heating System Installation',cats:['heating'],ratio:'t',sample:true,desc:'Sample entry for a heating system installation, based on a boiler and copper-piping photo.',images:[IMG.boiler,IMG.pipe,IMG.furnace]},
  {id:5,title:'Residential Heating Solutions',cats:['heating','residential'],ratio:'s',sample:true,desc:'Sample entry for residential heating work.',images:[IMG.furnace,IMG.boiler]},
  {id:6,title:'Heating Equipment Upgrade',cats:['heating'],ratio:'w',sample:true,desc:'Sample entry for a heating equipment upgrade.',images:[IMG.part,IMG.furnace,IMG.boiler]},
- {id:7,title:'Air Conditioning Installation',cats:['ac'],ratio:'s',sample:true,desc:'Sample entry for an air conditioning installation.',images:[IMG.ac,IMG.maint]},
+ {id:7,title:'Heat Pump/Air Conditioning Installation',cats:['ac'],ratio:'s',sample:true,desc:'Sample entry for a heat pump/air conditioning installation.',images:[IMG.ac,IMG.maint]},
  {id:8,title:'Cooling System Setup',cats:['ac','commercial'],ratio:'w',sample:true,desc:'Sample entry for a cooling system setup.',images:[IMG.ac,IMG.part]},
  {id:9,title:'HVAC System Maintenance',cats:['hvac','residential'],ratio:'t',sample:true,desc:'Sample entry for HVAC system maintenance.',images:[IMG.maint,IMG.furnace,IMG.ac]},
  {id:10,title:'Commercial HVAC Equipment',cats:['hvac','commercial'],ratio:'s',sample:true,desc:'Sample entry for commercial HVAC equipment work.',images:[IMG.maint,IMG.ac]}
